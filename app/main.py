@@ -5,6 +5,7 @@ from fastapi_cache.backends.redis import RedisBackend
 from redis import asyncio as aioredis
 from fastapi import FastAPI
 from app.core.config import settings
+from fastapi_cache.decorator import cache
 from datetime import datetime 
 
 @asynccontextmanager
